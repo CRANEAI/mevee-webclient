@@ -157,7 +157,7 @@ class JoinHandler extends Component {
     };
 
     // use enter api to get params for the client
-    const url = `/bigbluebutton/api/enter?sessionToken=${sessionToken}`;
+    const url = `https://www.meveepro.com/bigbluebutton/api/enter?sessionToken=${sessionToken}`;
     const fetchContent = await fetch(url, { credentials: 'same-origin' });
     const parseToJson = await fetchContent.json();
     const { response } = parseToJson;
