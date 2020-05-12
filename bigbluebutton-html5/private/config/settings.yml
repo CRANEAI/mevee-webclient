@@ -19,13 +19,13 @@ public:
     askForFeedbackOnLogout: false
     allowUserLookup: false
     enableNetworkInformation: false
-    enableLimitOfViewersInWebcam: false
+    enableLimitOfViewersInWebcam: true
     enableMultipleCameras: false
-    enableTalkingIndicator: true
-    viewersInWebcam: 8
+    enableTalkingIndicator: false
+    viewersInWebcam: 4
     ipv4FallbackDomain: ""
     allowLogout: true
-    allowFullscreen: true
+    allowFullscreen: false
     defaultSettings:
       application:
         animations: true
@@ -42,7 +42,7 @@ public:
         outputDeviceId: undefined
       dataSaving:
         viewParticipantsWebcams: true
-        viewScreenshare: true
+        viewScreenshare: false
     shortcuts:
       openOptions:
         accesskey: O
@@ -77,7 +77,7 @@ public:
     branding:
       displayBrandingArea: true
     connectionTimeout: 60000
-    showHelpButton: true
+    showHelpButton: false
     effectiveConnection:
       - critical
       - danger
@@ -114,12 +114,12 @@ public:
         name: High definition
         default: false
         bitrate: 800
-    enableScreensharing: true
+    enableScreensharing: false
     enableVideo: true
-    enableVideoMenu: true
+    enableVideoMenu: false
     enableListenOnly: true
     autoShareWebcam: false
-    skipVideoPreview: false
+    skipVideoPreview: true
   pingPong:
     clearUsersInSeconds: 180
     pongTimeInSeconds: 15
@@ -127,10 +127,10 @@ public:
     toggleRecording: false
     toggleSelfVoice: false
   poll:
-    enabled: true
+    enabled: false
     max_custom: 5
   captions:
-    enabled: true
+    enabled: false
     enableDictation: false
     backgroundColor: "#000000"
     fontColor: "#FFFFFF"
@@ -169,7 +169,7 @@ public:
       rtl: false
   layout:
     autoSwapLayout: false
-    hidePresentation: false
+    hidePresentation: true
     webcamsDefaultPlacement: "top"
   media:
     stunTurnServersFetchAddress: "/bigbluebutton/api/stuns"
