@@ -5,6 +5,7 @@ import { styles } from './styles.scss';
 
 export default () => (
   <TransitionGroup>
+    {/*
     <CSSTransition
       classNames={{
           appear: styles.appear,
@@ -29,5 +30,6 @@ export default () => (
         </div>
       </div>
     </CSSTransition>
+      */}
   </TransitionGroup>
 );
