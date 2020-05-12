@@ -260,7 +260,7 @@ class MessageListItem extends Component {
     } = this.props;
 
     if (!user) {
-      //return this.renderSystemMessage();
+      return this.renderSystemMessage();
     }
 
     return (
