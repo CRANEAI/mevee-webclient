@@ -7,15 +7,15 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: MeveePro
+    appName: MeveePro
     bbbServerVersion: 2.2
-    copyright: "©2020 BigBlueButton Inc."
+    copyright: "©2020 EpicAi."
     html5ClientBuild: HTML5_CLIENT_VERSION
     helpLink: https://bigbluebutton.org/html5/
     lockOnJoin: true
     cdn: ""
-    basename: "/html5client"
+    basename: "/live"
     askForFeedbackOnLogout: false
     allowUserLookup: false
     enableNetworkInformation: false
