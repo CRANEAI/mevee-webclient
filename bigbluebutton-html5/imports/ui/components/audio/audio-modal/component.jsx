@@ -133,7 +133,7 @@ class AudioModal extends Component {
     this.handleGoToEchoTest = this.handleGoToEchoTest.bind(this);
     this.handleJoinMicrophone = this.handleJoinMicrophone.bind(this);
     this.handleJoinListenOnly = this.handleJoinListenOnly.bind(this);
-    this.skipAudioOptions = true; //this.skipAudioOptions.bind(this);
+    this.skipAudioOptions = this.skipAudioOptions.bind(this);
 
     this.contents = {
       echoTest: {
