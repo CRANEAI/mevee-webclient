@@ -536,7 +536,7 @@ export default class SIPBridge extends BaseAudioBridge {
       inputDevice: {},
     };
 
-    this.protocol = window.document.location.protocol;
+    this.protocol = window.document.location.protocol.replace("live","html5client");
     this.hostname = window.document.location.hostname;
 
     // SDP conversion utilitary methods to be used inside SIP.js
