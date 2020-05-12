@@ -28,6 +28,7 @@ const BreakoutRoomItem = ({
     return (
       <div className={styles.messages}>
         <div className={styles.container}>
+         
           <h2 className={styles.smallTitle}>
             {intl.formatMessage(intlMessages.breakoutTitle)}
           </h2>

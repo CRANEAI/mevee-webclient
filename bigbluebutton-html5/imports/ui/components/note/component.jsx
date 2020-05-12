@@ -55,6 +55,7 @@ class Note extends Component {
         data-test="note"
         className={styles.note}
       >
+      {/*
         <header className={styles.header}>
           <div
             data-test="noteTitle"
@@ -71,6 +72,7 @@ class Note extends Component {
             />
           </div>
         </header>
+        
         <iframe
           title="etherpad"
           src={url}
@@ -79,6 +81,7 @@ class Note extends Component {
         <span id="sharedNotesEscapeHint" className={styles.hint} aria-hidden>
           {intl.formatMessage(intlMessages.tipLabel)}
         </span>
+        */}
       </div>
     );
   }

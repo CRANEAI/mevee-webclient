@@ -76,6 +76,7 @@ class UserCaptions extends Component {
     return (
       <div className={styles.messages}>
         <div className={styles.container}>
+        <h4>LOGO</h4>
           <h2 className={styles.smallTitle}>
             {intl.formatMessage(intlMessages.title)}
           </h2>
