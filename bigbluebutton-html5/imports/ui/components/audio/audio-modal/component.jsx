@@ -521,8 +521,12 @@ class AudioModal extends Component {
     const { handleAllowAutoplay } = this.props;
     console.log(handleAllowAutoplay)
     alert(handleAllowAutoplay)
+    handleAllowAutoplay = true
     return (
-      {handleAllowAutoplay=true}
+      <AudioAutoplayPrompt
+        handleAllowAutoplay={handleAllowAutoplay}
+      />
+    );
   }
 
   render() {
