@@ -1,12 +1,12 @@
 public:
   app:
-    mobileFontSize: 16px
-    desktopFontSize: 14px
+    mobileFontSize: 18px
+    desktopFontSize: 16px
     audioChatNotification: false
     autoJoin: true
     listenOnlyMode: true
-    forceListenOnly: false
-    skipCheck: false
+    forceListenOnly: true
+    skipCheck: true
     clientTitle: MeveePro
     appName: MeveePro
     bbbServerVersion: 2.2
