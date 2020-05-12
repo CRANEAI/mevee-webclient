@@ -9,6 +9,10 @@ try {
     const SETTINGS = YAML.parse(fs.readFileSync(YAML_FILE_PATH, 'utf-8'));
 
     Meteor.settings = SETTINGS;
+
+    console.log("RH", Meteor.settings)
+
+
     __meteor_runtime_config__.PUBLIC_SETTINGS = SETTINGS.public;
   } else {
     throw new Error('File doesn\'t exists');
