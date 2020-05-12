@@ -47,6 +47,7 @@ class ActionsBar extends PureComponent {
     return (
       <div className={styles.actionsbar}>
         <div className={styles.left}>
+         {/*
           <ActionsDropdown {...{
             amIPresenter,
             amIModerator,
@@ -62,6 +63,7 @@ class ActionsBar extends PureComponent {
             podIds,
           }}
           />
+        */}
           {isCaptionsAvailable
             ? (
               <CaptionsButtonContainer {...{ intl }} />
