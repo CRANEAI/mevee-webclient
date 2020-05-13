@@ -58,6 +58,7 @@ class AudioControls extends PureComponent {
 
     }
 
+    window.addEventListener('message', processToggleMuteFromOutside);
 
     console.log("FIRST")
 
