@@ -16,6 +16,33 @@ class ActionsBar extends PureComponent {
 
  
   processToggleVideoFromOutside (e){
+    const {
+      amIPresenter,
+      handleShareScreen,
+      handleUnshareScreen,
+      isVideoBroadcasting,
+      amIModerator,
+      screenSharingCheck,
+      enableVideo,
+      isLayoutSwapped,
+      toggleSwapLayout,
+      handleTakePresenter,
+      intl,
+      currentSlidHasContent,
+      parseCurrentSlideContent,
+      isSharingVideo,
+      screenShareEndAlert,
+      stopExternalVideoShare,
+      screenshareDataSavingSetting,
+      isCaptionsAvailable,
+      isMeteorConnected,
+      isPollingEnabled,
+      isThereCurrentPresentation,
+      allowExternalVideo,
+      presentations,
+      setPresentation,
+      podIds,
+    } = this.props;
     console.log(e)
     switch(e.type)
     {
@@ -28,10 +55,10 @@ class ActionsBar extends PureComponent {
       break;
 
       case 'status':
-      console.log( this.props.isVideoBroadcasting) 
-      console.log( this.props.isSharingVideo) 
-      console.log( this.props.isSharingVideo) 
-      console.log( this.props.stopExternalVideoShare)
+      console.log( isVideoBroadcasting) 
+      console.log( isSharingVideo) 
+      console.log( isSharingVideo) 
+      console.log( stopExternalVideoShare)
       break;
     }
   }
