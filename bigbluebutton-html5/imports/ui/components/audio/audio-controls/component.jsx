@@ -57,6 +57,9 @@ class AudioControls extends PureComponent {
 
     }
 
+
+    console.log("FIRST")
+
     window.callm = function(){
       alert("triggered")
       this.listenBtn.click();
