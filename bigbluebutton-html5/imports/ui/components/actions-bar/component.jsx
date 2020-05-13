@@ -28,14 +28,17 @@ class ActionsBar extends PureComponent {
       break;
 
       case 'status':
-
+      console.log( this.props.isVideoBroadcasting) 
+      console.log( this.props.isSharingVideo) 
+      console.log( this.props.isSharingVideo) 
+      console.log( this.props.stopExternalVideoShare)
       break;
     }
   }
 
   componentDidMount() {
    
-    window.processToggleVideoFromOutside = processToggleVideoFromOutside
+    window.processToggleVideoFromOutside = this.processToggleVideoFromOutside
 
   }
 
