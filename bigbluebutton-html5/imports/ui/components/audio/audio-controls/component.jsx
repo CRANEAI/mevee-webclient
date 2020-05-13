@@ -68,6 +68,11 @@ class AudioControls extends PureComponent {
       this.talkBtn.current.click()
       this.listenBtn.current.click();
     }
+    window.callmb = function(){
+      console.log("clicked.")
+      console.log(this.talkBtn, this.talkBtn.current)
+      this.talkBtn.current.click()
+    }
 
     console.log("RH WINDOW EVENT", window)
     console.log("RH1.5")
