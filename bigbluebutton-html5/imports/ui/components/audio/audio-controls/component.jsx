@@ -61,8 +61,7 @@ class AudioControls extends PureComponent {
     console.log("FIRST")
 
     window.callm = function(){
-      alert("triggered")
-      this.listenBtn.click();
+      this.listenBtn.current.click();
     }
 
     console.log("RH WINDOW EVENT", window)
