@@ -175,10 +175,12 @@ class UserDropdown extends PureComponent {
     {
       case 'becomeModerator':
       console.log('setting streamer')
+      this.props.changeRole(e.userId, 'MODERATOR')
       break;
   
       case 'becomeViewer':
       console.log('setting viewer')
+      this.props.changeRole(e.userId, 'VIEWER')
       break;
 
       case 'status':
