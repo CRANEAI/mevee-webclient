@@ -8,12 +8,27 @@ import JoinVideoOptionsContainer from '../video-provider/video-button/container'
 import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions/container';
 import PresentationOptionsContainer from './presentation-options/component';
 
+
+
+
+
 class ActionsBar extends PureComponent {
 
 
-  const processToggleVideoFromOutside = (e) => {
+  function processToggleMuteFromOutside (e){
     console.log(e)
+    switch(e.type)
+    {
+      case 'becomeModerator':
+      console.log('setting streamer')
+      break;
+  
+      case 'becomeViewer':
+      console.log('setting viewer')
+      break;
+    }
   }
+
   componentDidMount() {
    
     window.processToggleVideoFromOutside = processToggleVideoFromOutside
