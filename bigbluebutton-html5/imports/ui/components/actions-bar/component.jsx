@@ -14,8 +14,8 @@ import PresentationOptionsContainer from './presentation-options/component';
 
 class ActionsBar extends PureComponent {
 
-
-  function processToggleMuteFromOutside (e){
+ 
+  processToggleMuteFromOutside (e){
     console.log(e)
     switch(e.type)
     {
@@ -25,6 +25,10 @@ class ActionsBar extends PureComponent {
   
       case 'becomeViewer':
       console.log('setting viewer')
+      break;
+
+      case 'status':
+
       break;
     }
   }
