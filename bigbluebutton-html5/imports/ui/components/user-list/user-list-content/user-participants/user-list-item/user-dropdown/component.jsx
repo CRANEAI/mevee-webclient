@@ -181,6 +181,15 @@ class UserDropdown extends PureComponent {
       case 'becomeViewer':
       console.log('setting viewer')
       this.props.changeRole(e.userId, 'VIEWER')
+
+      let mid = this.props.requestUserInformation(e.userId)
+      console.log(mid)
+      //toggleVoice(user.userId)
+
+      break;
+
+      case 'path':
+      e.path(e.params);
       break;
 
       case 'status':
