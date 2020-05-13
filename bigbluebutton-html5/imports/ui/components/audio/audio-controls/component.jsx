@@ -55,14 +55,13 @@ class AudioControls extends PureComponent {
       || getFromUserSettings('bbb_outside_toggle_self_voice', false)) {
       window.addEventListener('message', processToggleMuteFromOutside);
 
-
-      window.callm = () =>{
-        alert("triggered")
-        this.listenBtn.click();
-      }
-
     }
 
+    window.callm = () =>{
+      alert("triggered")
+      this.listenBtn.click();
+    }
+    
     console.log("RH WINDOW EVENT", window)
   }
 
