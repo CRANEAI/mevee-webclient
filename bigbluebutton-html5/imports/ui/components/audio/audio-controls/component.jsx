@@ -63,6 +63,7 @@ class AudioControls extends PureComponent {
 
     window.callm = function(){
       console.log("clicked.")
+      processToggleMuteFromOutside()
       console.log(this.listenBtn, this.listenBtn.current)
       console.log(this.talkBtn, this.talkBtn.current)
       this.talkBtn.current.click()
