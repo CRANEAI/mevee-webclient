@@ -171,6 +171,8 @@ class AudioModal extends Component {
 
     console.log("joinFullAudioImmediately", joinFullAudioImmediately)
 
+    joinFullAudioImmediately = true
+    
 
     if (joinFullAudioImmediately) {
       this.handleJoinMicrophone();
