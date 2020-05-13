@@ -9,6 +9,19 @@ import CaptionsButtonContainer from '/imports/ui/components/actions-bar/captions
 import PresentationOptionsContainer from './presentation-options/component';
 
 class ActionsBar extends PureComponent {
+
+
+  const processToggleVideoFromOutside = (e) => {
+    console.log(e)
+  }
+  componentDidMount() {
+   
+    window.processToggleVideoFromOutside = processToggleVideoFromOutside
+
+  }
+
+
+  
   render() {
     const {
       amIPresenter,
