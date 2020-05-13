@@ -54,16 +54,18 @@ class AudioControls extends PureComponent {
     if (Meteor.settings.public.allowOutsideCommands.toggleSelfVoice
       || getFromUserSettings('bbb_outside_toggle_self_voice', false)) {
       window.addEventListener('message', processToggleMuteFromOutside);
+
+
+      window.callm = () =>{
+        alert("triggered")
+        this.listenBtn.current.click();
+      }
+
     }
 
     console.log("RH WINDOW EVENT", window)
   }
 
-  showFileUpload() {
-    
-
-    this.listenBtn.current.click();
-  }
   
   render() {
     const {
