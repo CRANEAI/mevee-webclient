@@ -12,6 +12,7 @@ import Service from '../service';
 const AudioControlsContainer = props => <AudioControls {...props} />;
 
 const processToggleMuteFromOutside = (e) => {
+  console.log(e, "in")
   switch (e.data) {
     case 'c_mute': {
       makeCall('toggleVoice');

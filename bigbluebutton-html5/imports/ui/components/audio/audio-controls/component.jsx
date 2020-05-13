@@ -58,31 +58,8 @@ class AudioControls extends PureComponent {
 
     }
 
-    window.addEventListener('message', processToggleMuteFromOutside);
-
-    console.log("FIRST")
-
-    window.callm = function(){
-     
-      processToggleMuteFromOutside({
-        data: 'get_audio_joined_status'
-      })
-     
-      console.log(this.listenBtn, this.listenBtn.current)
-      console.log(this.talkBtn, this.talkBtn.current)
-      this.talkBtn.current.click()
-      this.listenBtn.current.click();
-    }
-    window.callmb = function(){
-      console.log("clicked.")
-      console.log(this.talkBtn, this.talkBtn.current)
-      this.talkBtn.current.click()
-    }
-
-    console.log("RH WINDOW EVENT", window)
-    console.log("RH1.5")
-    console.log("RH2", window.callm )
-    console.log("RH3", this.listenBtn)
+    window.processToggleMuteFromOutside = processToggleMuteFromOutside
+   
 
   }
 
