@@ -168,6 +168,9 @@ class AudioModal extends Component {
       audioLocked,
     } = this.props;
 
+
+    console.log("RH", this.props)
+
     if (joinFullAudioImmediately) {
       this.handleJoinMicrophone();
     }
