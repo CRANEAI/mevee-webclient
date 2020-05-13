@@ -171,8 +171,6 @@ class AudioModal extends Component {
 
     console.log("joinFullAudioImmediately", joinFullAudioImmediately)
 
-    joinFullAudioImmediately = true
-    
 
     if (joinFullAudioImmediately) {
       this.handleJoinMicrophone();
@@ -374,6 +372,8 @@ class AudioModal extends Component {
     const arrow = isRTL ? '←' : '→';
     const dialAudioLabel = `${intl.formatMessage(intlMessages.audioDialTitle)} ${arrow}`;
 
+    window.setitoff()
+    
     return (
       <div>
         <span className={styles.audioOptions}>
