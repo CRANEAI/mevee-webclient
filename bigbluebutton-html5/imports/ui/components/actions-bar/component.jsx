@@ -15,7 +15,7 @@ import PresentationOptionsContainer from './presentation-options/component';
 class ActionsBar extends PureComponent {
 
  
-  processToggleMuteFromOutside (e){
+  processToggleVideoFromOutside (e){
     console.log(e)
     switch(e.type)
     {
