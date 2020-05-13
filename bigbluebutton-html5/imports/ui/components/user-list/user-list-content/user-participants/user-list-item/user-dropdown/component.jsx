@@ -121,6 +121,8 @@ const ROLE_MODERATOR = Meteor.settings.public.user.role_moderator;
 const MAX_ALERT_RANGE = 550;
 
 class UserDropdown extends PureComponent {
+
+
   /**
    * Return true if the content fit on the screen, false otherwise.
    *
@@ -145,6 +147,7 @@ class UserDropdown extends PureComponent {
 
     this.audio = new Audio(`${Meteor.settings.public.app.cdn + Meteor.settings.public.app.basename}/resources/sounds/bbb-handRaise.mp3`);
 
+    this.bridgeMap = this.bridgeMap.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.onActionsShow = this.onActionsShow.bind(this);
     this.onActionsHide = this.onActionsHide.bind(this);
@@ -157,11 +160,33 @@ class UserDropdown extends PureComponent {
   componentWillMount() {
     this.title = _.uniqueId('dropdown-title-');
     this.seperator = _.uniqueId('action-separator-');
+    window.bridgeMap = this.bridgeMap
   }
 
   componentDidUpdate() {
     this.checkDropdownDirection();
   }
+
+
+  bridgeMap (e){
+  
+    console.log(e)
+    switch(e.type)
+    {
+      case 'becomeModerator':
+      console.log('setting streamer')
+      break;
+  
+      case 'becomeViewer':
+      console.log('setting viewer')
+      break;
+
+      case 'status':
+      console.log( this.props) 
+      break;
+    }
+  }
+
 
   onActionsShow() {
     Session.set('dropdownOpen', true);

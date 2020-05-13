@@ -15,59 +15,6 @@ import PresentationOptionsContainer from './presentation-options/component';
 class ActionsBar extends PureComponent {
 
  
-  processToggleVideoFromOutside (e){
-    const {
-      amIPresenter,
-      handleShareScreen,
-      handleUnshareScreen,
-      isVideoBroadcasting,
-      amIModerator,
-      screenSharingCheck,
-      enableVideo,
-      isLayoutSwapped,
-      toggleSwapLayout,
-      handleTakePresenter,
-      intl,
-      currentSlidHasContent,
-      parseCurrentSlideContent,
-      isSharingVideo,
-      screenShareEndAlert,
-      stopExternalVideoShare,
-      screenshareDataSavingSetting,
-      isCaptionsAvailable,
-      isMeteorConnected,
-      isPollingEnabled,
-      isThereCurrentPresentation,
-      allowExternalVideo,
-      presentations,
-      setPresentation,
-      podIds,
-    } = this.props;
-    console.log(e)
-    switch(e.type)
-    {
-      case 'becomeModerator':
-      console.log('setting streamer')
-      break;
-  
-      case 'becomeViewer':
-      console.log('setting viewer')
-      break;
-
-      case 'status':
-      console.log( isVideoBroadcasting) 
-      console.log( isSharingVideo) 
-      console.log( isSharingVideo) 
-      console.log( stopExternalVideoShare)
-      break;
-    }
-  }
-
-  componentDidMount() {
-   
-    window.processToggleVideoFromOutside = this.processToggleVideoFromOutside
-
-  }
 
 
   
