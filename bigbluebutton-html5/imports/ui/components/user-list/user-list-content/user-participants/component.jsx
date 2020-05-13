@@ -57,6 +57,7 @@ class UserParticipants extends Component {
     this.rove = this.rove.bind(this);
     this.changeState = this.changeState.bind(this);
     this.getUsers = this.getUsers.bind(this);
+    this.listUsers = this.listUsers.bind(this);
   }
 
   componentDidMount() {
@@ -67,6 +68,22 @@ class UserParticipants extends Component {
         this.rove,
       );
     }
+    window.listUsers = this.listUsers
+
+  }
+
+
+  listUsers (){
+    const {
+      compact,
+      setEmojiStatus,
+      users,
+      requestUserInformation,
+      currentUser,
+      meetingIsBreakout,
+    } = this.props;
+
+    return (users)
   }
 
   shouldComponentUpdate(nextProps, nextState) {
