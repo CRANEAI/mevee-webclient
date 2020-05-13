@@ -168,6 +168,7 @@ class AudioModal extends Component {
       audioLocked,
     } = this.props;
 
+    alert ('audio')
 
     console.log("RH", this.props)
 
