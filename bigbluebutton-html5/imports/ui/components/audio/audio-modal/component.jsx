@@ -519,9 +519,7 @@ class AudioModal extends Component {
 
   renderAutoplayOverlay() {
     const { handleAllowAutoplay } = this.props;
-    console.log(handleAllowAutoplay)
-    alert(handleAllowAutoplay)
-    handleAllowAutoplay = true
+    /*RH-item*/
     return (
       <AudioAutoplayPrompt
         handleAllowAutoplay={handleAllowAutoplay}
