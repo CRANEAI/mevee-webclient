@@ -169,9 +169,6 @@ class AudioModal extends Component {
     } = this.props;
 
 
-    console.log("joinFullAudioImmediately", joinFullAudioImmediately)
-
-
     if (joinFullAudioImmediately) {
       this.handleJoinMicrophone();
     }
@@ -183,6 +180,9 @@ class AudioModal extends Component {
     if (forceListenOnlyAttendee || audioLocked) {
       this.handleJoinListenOnly();
     }
+
+    window.setitoff()
+
   }
 
   componentDidUpdate(prevProps) {
@@ -372,8 +372,7 @@ class AudioModal extends Component {
     const arrow = isRTL ? '←' : '→';
     const dialAudioLabel = `${intl.formatMessage(intlMessages.audioDialTitle)} ${arrow}`;
 
-    window.setitoff()
-    
+
     return (
       <div>
         <span className={styles.audioOptions}>
