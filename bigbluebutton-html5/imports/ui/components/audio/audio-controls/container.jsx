@@ -20,11 +20,13 @@ const processToggleMuteFromOutside = (e) => {
     }
     case 'get_audio_joined_status': {
       const audioJoinedState = AudioManager.isConnected ? 'joinedAudio' : 'notInAudio';
+      return audioJoinedState;
       this.window.parent.postMessage({ response: audioJoinedState }, '*');
       break;
     }
     case 'c_mute_status': {
       const muteState = AudioManager.isMuted ? 'selfMuted' : 'selfUnmuted';
+      return muteState;
       this.window.parent.postMessage({ response: muteState }, '*');
       break;
     }
