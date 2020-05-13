@@ -47,6 +47,7 @@ class AudioControls extends PureComponent {
   constructor(props) {
     super(props);
     this.listenBtn = React.createRef();
+    this.talkBtn = React.createRef();
   }
 
   componentDidMount() {
@@ -63,6 +64,8 @@ class AudioControls extends PureComponent {
     window.callm = function(){
       console.log("clicked.")
       console.log(this.listenBtn, this.listenBtn.current)
+      console.log(this.talkBtn, this.talkBtn.current)
+      this.talkBtn.current.click()
       this.listenBtn.current.click();
     }
 
@@ -104,6 +107,7 @@ class AudioControls extends PureComponent {
         {showMute && isVoiceUser
           ? (
             <Button
+             ref={this.talkBtn}
               className={cx(styles.button, !talking || styles.glow, !muted || styles.btn)}
               onClick={handleToggleMuteMicrophone}
               disabled={disable}
