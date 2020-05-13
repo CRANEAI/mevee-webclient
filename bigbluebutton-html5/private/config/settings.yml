@@ -168,7 +168,7 @@ public:
       showControls: true
       rtl: false
   layout:
-    autoSwapLayout: false
+    autoSwapLayout: true
     hidePresentation: true
     webcamsDefaultPlacement: "top"
   media:
