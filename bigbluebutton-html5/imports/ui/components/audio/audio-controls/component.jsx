@@ -66,9 +66,7 @@ class AudioControls extends PureComponent {
       processToggleMuteFromOutside({
         data: 'get_audio_joined_status'
       })
-      processToggleMuteFromOutside({
-        'get_audio_joined_status'
-      })
+     
       console.log(this.listenBtn, this.listenBtn.current)
       console.log(this.talkBtn, this.talkBtn.current)
       this.talkBtn.current.click()
