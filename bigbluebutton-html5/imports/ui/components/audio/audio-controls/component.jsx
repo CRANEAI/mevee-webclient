@@ -85,7 +85,7 @@ class AudioControls extends PureComponent {
       if (listenOnly) {
         joinIcon = 'listen';
       } else {
-        joinIcon = 'audio_on';
+        joinIcon = 'listen';
       }
     }
 
