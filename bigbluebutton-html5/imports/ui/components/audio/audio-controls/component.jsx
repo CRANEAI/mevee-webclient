@@ -42,14 +42,29 @@ const propTypes = {
 };
 
 class AudioControls extends PureComponent {
+
+
+  constructor(props) {
+    super(props);
+    this.listenBtn = React.createRef();
+  }
+
   componentDidMount() {
     const { processToggleMuteFromOutside } = this.props;
     if (Meteor.settings.public.allowOutsideCommands.toggleSelfVoice
       || getFromUserSettings('bbb_outside_toggle_self_voice', false)) {
       window.addEventListener('message', processToggleMuteFromOutside);
     }
+
+    console.log("RH WINDOW EVENT", window)
   }
 
+  showFileUpload() {
+    
+
+    this.listenBtn.current.click();
+  }
+  
   render() {
     const {
       handleToggleMuteMicrophone,
@@ -97,6 +112,7 @@ class AudioControls extends PureComponent {
             />
           ) : null}
         <Button
+          ref={this.listenBtn}
           className={cx(styles.button, inAudio || styles.btn)}
           onClick={inAudio ? handleLeaveAudio : handleJoinAudio}
           disabled={disable}
