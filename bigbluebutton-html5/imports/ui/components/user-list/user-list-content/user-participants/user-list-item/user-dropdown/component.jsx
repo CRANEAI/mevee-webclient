@@ -188,6 +188,18 @@ class UserDropdown extends PureComponent {
 
       break;
 
+
+      case 'toggleVoice':
+      console.log('setting viewer')
+      this.toggleVoice(e.userId)
+      let mid = this.props.requestUserInformation(e.userId)
+      console.log(mid)
+     
+
+      break;
+
+
+
       case 'path':
       [e.func](e.params);
       break;
