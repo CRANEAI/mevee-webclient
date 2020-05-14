@@ -69,7 +69,7 @@ class AudioControls extends PureComponent {
 
   audioMap (e){
     console.log(this.props)
-    this.props.handleJoinAudio()
+    this.props.handleLeaveAudio()
     console.log(e)
   }
   
