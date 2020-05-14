@@ -8,7 +8,7 @@ const logoutRouteHandler = () => {
       window.location.href =
         protocolPattern.test(logoutURL) ?
           logoutURL :
-          `http://${logoutURL}`;
+          `https://www.meveepro.com`;
     });
 };
 
