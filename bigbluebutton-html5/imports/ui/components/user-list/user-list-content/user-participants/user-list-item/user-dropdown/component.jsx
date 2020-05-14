@@ -197,7 +197,16 @@ class UserDropdown extends PureComponent {
       break;
 
 
+      case 'toggleUserLock':
+      console.log('setting viewer')
+      this.props.toggleUserLock(e.userId)
+      //let mid = this.props.requestUserInformation(e.userId)
+      //console.log(mid)
+      break;
 
+
+
+      
       case 'path':
       [e.func](e.params);
       break;
