@@ -189,7 +189,7 @@ class UserDropdown extends PureComponent {
       break;
 
       case 'path':
-      e.func(e.params);
+      [e.func](e.params);
       break;
 
       case 'status':
