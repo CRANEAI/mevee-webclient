@@ -78,7 +78,7 @@ class ErrorScreen extends React.PureComponent {
         {
           !Session.get('errorMessageDescription') || (
           <div className={styles.sessionMessage}>
-            {Session.get('errorMessageDescription')}
+           
           </div>)
         }
         <div>

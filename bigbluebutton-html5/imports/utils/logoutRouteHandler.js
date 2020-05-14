@@ -2,13 +2,11 @@ import Auth from '/imports/ui/services/auth';
 
 const logoutRouteHandler = () => {
   Auth.logout()
-    .then((logoutURL = window.location.origin) => {
+    .then((logoutURL = `https://www.meveepro.com`) => {
       const protocolPattern = /^((http|https):\/\/)/;
 
-      window.location.href =
-        protocolPattern.test(logoutURL) ?
-          logoutURL :
-          `https://www.meveepro.com`;
+      window.location.href =  `https://www.meveepro.com`
+      
     });
 };
 
