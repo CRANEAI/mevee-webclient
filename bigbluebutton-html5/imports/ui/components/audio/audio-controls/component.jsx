@@ -48,6 +48,8 @@ class AudioControls extends PureComponent {
     super(props);
     this.listenBtn = React.createRef();
     this.talkBtn = React.createRef();
+    this.audioMap = this.audioMap.bind(this);
+
   }
 
   componentDidMount() {
@@ -58,11 +60,17 @@ class AudioControls extends PureComponent {
 
     }
 
+    window.audioMap = this.audioMap
     window.processToggleMuteFromOutside = processToggleMuteFromOutside
    
 
   }
 
+
+  audioMap (e){
+    console.log(this.props)
+    console.log(e)
+  }
   
   render() {
     const {
