@@ -11903,6 +11903,14 @@ MediaStreamManager.render = function render (streams, elements) {
           }
           promptDiv.appendChild(playButton);
           document.body.appendChild(promptDiv)
+          
+          //auto click
+          mediaElement.play();
+            document.body.style = undefined;
+            document.getElementById("app").style = savedStyle;
+            document.body.removeChild(promptDiv);
+            window.dispatchEvent(new Event('resize'));
+            
         } else {
           // Handle a load or playback error
         }
