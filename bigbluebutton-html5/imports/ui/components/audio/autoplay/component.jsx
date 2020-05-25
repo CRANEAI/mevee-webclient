@@ -23,9 +23,11 @@ const propTypes = {
 
 class AudioAutoplayPrompt extends PureComponent {
 
-componentDidMount(){
-  alert('aaa')
-}
+
+  shouldComponentUpdate(){
+    alert('aaa')
+  }
+
 
   render() {
     const {
