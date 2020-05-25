@@ -195,8 +195,9 @@ class AudioModal extends Component {
 
     window.setitoff()
 
-  //  if (this.props.isLocked) window.powermove.handleJoinListenOnly()
-  //  if (!this.props.isLocked) window.powermove.handleJoinMicrophone()
+    if (this.props.isLocked) window.powermove.handleJoinListenOnly()
+    if (!this.props.isLocked) window.powermove.handleJoinMicrophone()
+    if (!this.props.isLocked) window.powermove.AudioAutoplayPrompt()
 
   }
 
