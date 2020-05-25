@@ -182,9 +182,10 @@ class AudioModal extends Component {
     }
 
     console.log('\n\n\n\n\n\n\n\n\n')
-    console.log("------------------------------------------------------")
-    console.log()
-
+    console.log("=======================================================")
+    console.log(this.props)
+    console.log("=======================================================")
+    
     window.powermove = {
       handleJoinMicrophone: this.handleJoinMicrophone,
       handleGoToEchoTest: this.handleGoToEchoTest,
