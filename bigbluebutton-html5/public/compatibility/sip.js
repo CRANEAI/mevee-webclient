@@ -11817,7 +11817,7 @@ MediaStreamManager.render = function render (streams, elements) {
       promptLabel.style = "color: var(--color-off-white); margin: 0.25rem";
       promptDiv.appendChild(promptLabel);
       var playButton = document.createElement("BUTTON");
-      playButton.innerHTML = "Play";
+      playButton.innerHTML = "Play ME RH";
       playButton.style = "background-color: var(--color-primary); color: var(--color-off-white); border-radius: 4px; border: none; padding: 4px 8px; margin: 0.25rem;";
       playButton.onclick = () => {
         audioContext.resume();
