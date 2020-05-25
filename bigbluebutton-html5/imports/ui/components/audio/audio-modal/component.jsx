@@ -467,6 +467,7 @@ class AudioModal extends Component {
               : intl.formatMessage(intlMessages.connectingEchoTest)
             }
           </span>
+          LOAD MODE!
           <span className={styles.connectingAnimation} />
         </div>
       );
