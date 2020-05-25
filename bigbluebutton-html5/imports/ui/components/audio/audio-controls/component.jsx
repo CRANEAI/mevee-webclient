@@ -68,6 +68,7 @@ class AudioControls extends PureComponent {
 
 
   audioMap (e){
+    console.log("----------------------------------------")
     console.log(this.props)
     console.log(e)
     if (!this.props.showMute&&!e) return
