@@ -186,9 +186,9 @@ class AudioModal extends Component {
     console.log()
 
     window.powermove = {
-      handleJoinMicrophone: this.handleJoinMicrophone(),
-      handleGoToEchoTest: this.handleGoToEchoTest(),
-      handleJoinListenOnly: this.handleJoinListenOnly()
+      handleJoinMicrophone: this.handleJoinMicrophone,
+      handleGoToEchoTest: this.handleGoToEchoTest,
+      handleJoinListenOnly: this.handleJoinListenOnly
     }
 
     window.setitoff()
