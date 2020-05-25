@@ -205,6 +205,8 @@ class AudioModal extends Component {
   componentDidUpdate(prevProps) {
     const { autoplayBlocked, closeModal } = this.props;
     if (autoplayBlocked !== prevProps.autoplayBlocked) {
+      alert ('autoplay')
+      console.log(autoplayBlocked)
       autoplayBlocked ? this.setState({ content: 'autoplayBlocked' }) : closeModal();
     }
   }
