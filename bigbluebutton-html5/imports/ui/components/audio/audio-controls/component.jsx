@@ -71,6 +71,10 @@ class AudioControls extends PureComponent {
     console.log("----------------------------------------")
     console.log(this.props)
     console.log(e)
+    console.log("----------------------------------------")
+    console.log("this.props.showMute", this.props.showMute)
+    console.log("e",e)
+    console.log("----------------------------------------")
     if (!this.props.showMute&&!e) return
     this.props.handleLeaveAudio()
     this.props.handleJoinAudio()
