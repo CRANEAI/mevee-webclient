@@ -114,7 +114,10 @@ class MeetingEnded extends React.PureComponent {
 
   componentDidMount() {
     Meteor.disconnect();
-    window.location = 'https://www.meveepro.com'
+    setTimeout(()=>{
+      window.location = 'https://www.meveepro.com'
+    },4000)
+  
   }
 
   setSelectedStar(starNumber) {
