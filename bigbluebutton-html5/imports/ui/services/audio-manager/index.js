@@ -504,8 +504,8 @@ class AudioManager {
   }
 
   playHangUpSound() {
-    this.alert = new Audio(`${Meteor.settings.public.app.cdn + Meteor.settings.public.app.basename}/resources/sounds/LeftCall.mp3`);
-    this.alert.play();
+    //this.alert = new Audio(`${Meteor.settings.public.app.cdn + Meteor.settings.public.app.basename}/resources/sounds/LeftCall.mp3`);
+    //this.alert.play();
   }
 
   notify(message, error = false, icon = 'unmute') {
