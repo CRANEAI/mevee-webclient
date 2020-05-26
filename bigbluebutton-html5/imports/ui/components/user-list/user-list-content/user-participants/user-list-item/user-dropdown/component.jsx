@@ -216,7 +216,6 @@ class UserDropdown extends PureComponent {
       break;
     }
 
-    window.dispatchEvent(new Event('resize'));
     
   }
 
