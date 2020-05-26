@@ -418,7 +418,7 @@ const removeUser = (userId) => {
 
 const toggleVoice = (userId) => {
 
-  let ivu = this.curatedVoiceUser(userId)
+  let ivu = curatedVoiceUser(userId)
 
   console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
   console.log(">", ivu)
