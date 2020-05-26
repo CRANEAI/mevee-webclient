@@ -87,6 +87,7 @@ class VideoService {
   joinVideo(deviceId) {
     this.deviceId = deviceId;
     this.isConnecting = true;
+    window.dispatchEvent(new Event('resize'));
   }
 
   joinedVideo() {
