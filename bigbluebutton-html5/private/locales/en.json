@@ -525,6 +525,7 @@
     "app.lock-viewers.description": "These options enable you to restrict viewers from using specific features.",
     "app.lock-viewers.featuresLable": "Feature",
     "app.lock-viewers.lockStatusLabel": "Status",
+    "app.poll.noPresentationSelected": "No presentation selected! Please select one.",
     "app.lock-viewers.webcamLabel": "Share webcam",
     "app.lock-viewers.otherViewersWebcamLabel": "See other viewers webcams",
     "app.lock-viewers.microphoneLable": "Share microphone",
