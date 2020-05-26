@@ -651,7 +651,7 @@ class VideoPreview extends Component {
             */}
             <Button
               data-test="startSharingWebcam"
-              color={shared ? "danger" : "fancybtn primary"}
+              color={shared ? "danger" : "fancybtn"}
               label={intl.formatMessage(shared ? intlMessages.stopSharingLabel : intlMessages.startSharingLabel)}
               onClick={shared ? this.handleStopSharing : this.handleStartSharing}
               disabled={isStartSharingDisabled || isStartSharingDisabled === null || shouldDisableButtons}
