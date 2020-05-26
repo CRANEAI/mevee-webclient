@@ -362,7 +362,9 @@ class VideoPreview extends Component {
     window.powermove.handleJoinMicrophone()
     //machine.data.i_live = true; 
     //mapNewJoin();
-    window.dispatchEvent(new Event('resize'));
+    setTimeout(()=>{
+      window.dispatchEvent(new Event('resize'));
+    },4000)
     //window.audioMap('force') 
     if (resolve) resolve();
   }
