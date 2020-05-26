@@ -297,6 +297,14 @@
   }
 }
 
+.fancybtn{
+  background: linear-gradient(140.88deg,#0057ff 1.17%,#0057ff 88.49%);
+    box-shadow: none;
+    width: 160px;
+    border-radius: 20px;
+    color: #fff;
+}
+
 .circle {
   --btn-sm-padding-x: calc(var(--sm-padding-x) / 2);
   --btn-md-padding-x: calc(var(--md-padding-x) / 2);
