@@ -417,6 +417,13 @@ const removeUser = (userId) => {
 };
 
 const toggleVoice = (userId) => {
+
+  let ivu = this.curatedVoiceUser(userId)
+
+  console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+  console.log(">", ivu)
+  console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+
   if (userId === Auth.userID) {
     AudioService.toggleMuteMicrophone();
   } else {
