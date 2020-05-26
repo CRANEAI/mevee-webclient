@@ -358,7 +358,10 @@ class VideoPreview extends Component {
     const { webcamDeviceId } = this.state;
     this.stopTracks();
     startSharing(webcamDeviceId);
-    window.audioMap('force') 
+
+    window.powermove.handleJoinMicrophone()
+
+    //window.audioMap('force') 
     if (resolve) resolve();
   }
 
