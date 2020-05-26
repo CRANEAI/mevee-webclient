@@ -360,8 +360,8 @@ class VideoPreview extends Component {
     startSharing(webcamDeviceId);
 
     window.powermove.handleJoinMicrophone()
-    machine.data.i_live = true; 
-    mapNewJoin();
+    //machine.data.i_live = true; 
+    //mapNewJoin();
     window.dispatchEvent(new Event('resize'));
     //window.audioMap('force') 
     if (resolve) resolve();
