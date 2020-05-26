@@ -339,6 +339,8 @@ class AudioModal extends Component {
 
     if (disableActions) return;
 
+    window.dispatchEvent(new Event('resize'));
+    
     this.setState({
       hasError: false,
       disableActions: true,
