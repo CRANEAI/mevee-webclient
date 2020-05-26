@@ -21,21 +21,21 @@
 
 .actions {
   margin-left: auto;
-  margin-right: 3px;
+  margin-right: auto;
 
 
   [dir="rtl"] & {
     margin-right: auto;
-    margin-left: 3px;
+    margin-left: auto;
   }
 
   :first-child {
-    margin-right: 3px;
+    margin-right: auto;
     margin-left: inherit;
 
     [dir="rtl"] & {
       margin-right: inherit;
-      margin-left: 3px;
+      margin-left: auto;
     }
   }
 }
