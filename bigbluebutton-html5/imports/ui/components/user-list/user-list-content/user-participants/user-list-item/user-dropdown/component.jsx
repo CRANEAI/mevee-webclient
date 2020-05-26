@@ -174,23 +174,23 @@ class UserDropdown extends PureComponent {
     switch(e.type)
     {
       case 'becomeModerator':
-      console.log('setting streamer')
+      //console.log('setting streamer')
       this.props.changeRole(e.userId, 'MODERATOR')
       break;
   
       case 'becomeViewer':
-      console.log('setting viewer')
+      //console.log('setting viewer')
       this.props.changeRole(e.userId, 'VIEWER')
 
       let mid = this.props.requestUserInformation(e.userId)
-      console.log(mid)
+      //console.log(mid)
       //toggleVoice(user.userId)
 
       break;
 
 
       case 'toggleVoice':
-      console.log('setting viewer')
+      //console.log('setting viewer')
       this.props.toggleVoice(e.userId)
       //let mid = this.props.requestUserInformation(e.userId)
       //console.log(mid)
@@ -198,7 +198,7 @@ class UserDropdown extends PureComponent {
 
 
       case 'toggleUserLock':
-      console.log('setting viewer')
+      //console.log('setting viewer')
       this.props.toggleUserLock(e.userId)
       //let mid = this.props.requestUserInformation(e.userId)
       //console.log(mid)
