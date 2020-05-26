@@ -420,6 +420,7 @@ const toggleVoice = (userId) => {
 
   let ivu = curatedVoiceUser(userId)
 
+  if (ivu.isMuted) return;
   console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
   console.log(">", ivu)
   console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
