@@ -425,6 +425,10 @@ const toggleVoice = (userId) => {
   console.log(">", ivu)
   console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
 
+  setTimeout(()=>{
+    window.hookedView()
+  },300)
+
   if (userId === Auth.userID) {
     AudioService.toggleMuteMicrophone();
   } else {
