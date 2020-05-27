@@ -427,18 +427,18 @@ const toggleVoice = (userId) => {
 
   setTimeout(()=>{
     window.hookedView()
-    window.shiftpubaudit() 
+    
   },300)
 
   if (userId === Auth.userID) {
     AudioService.toggleMuteMicrophone();
+    window.shiftpubaudit() 
   } else {
     makeCall('toggleVoice', userId);
     logger.info({
       logCode: 'usermenu_option_mute_audio',
       extraInfo: { logType: 'moderator_action' },
     }, 'moderator muted user microphone');
-    window.shiftpubaudit()
   }
 };
 
