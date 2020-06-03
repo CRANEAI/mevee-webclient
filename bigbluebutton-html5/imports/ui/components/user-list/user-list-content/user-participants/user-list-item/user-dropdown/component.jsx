@@ -170,7 +170,7 @@ class UserDropdown extends PureComponent {
 
   bridgeMap (e){
   
-    console.log(e)
+    //console.log(e)
     switch(e.type)
     {
       case 'becomeModerator':
