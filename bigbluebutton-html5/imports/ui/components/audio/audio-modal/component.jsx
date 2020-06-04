@@ -181,10 +181,10 @@ class AudioModal extends Component {
       this.handleJoinListenOnly();
     }
 
-    console.log('\n\n\n\n\n\n\n\n\n')
-    console.log("=======================================================")
-    console.log(this.props)
-    console.log("=======================================================")
+    //console.log('\n\n\n\n\n\n\n\n\n')
+    //console.log("=======================================================")
+    //console.log(this.props)
+    //console.log("=======================================================")
 
    
     window.powermove = {
