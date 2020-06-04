@@ -308,7 +308,7 @@ public:
       - hand
   clientLog:
     server: { enabled: true, level: info }
-    console: { enabled: true, level: debug }
+    console: { enabled: false, level: debug }
     external: { enabled: false, level: info, url: https://LOG_HOST/html5Log, method: POST, throttleInterval: 400, flushOnClose: true, logTag: "" }
 private:
   app:
