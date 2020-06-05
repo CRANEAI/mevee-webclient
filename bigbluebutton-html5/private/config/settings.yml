@@ -104,11 +104,11 @@ public:
         bitrate: 100
       - id: medium
         name: Medium quality
-        default: true
+        default: false
         bitrate: 200
       - id: high
         name: High quality
-        default: false
+        default: true
         bitrate: 500
       - id: hd
         name: High definition
