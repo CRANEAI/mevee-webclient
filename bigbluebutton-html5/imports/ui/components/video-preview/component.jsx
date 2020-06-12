@@ -366,6 +366,7 @@ class VideoPreview extends Component {
     //mapNewJoin();
     setTimeout(()=>{
       window.dispatchEvent(new Event('resize'));
+      window.dispatchEvent(new Event('joinin'));
     },4000)
     //window.audioMap('force') 
     if (resolve) resolve();
